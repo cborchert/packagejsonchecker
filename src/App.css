@@ -1,0 +1,131 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  width: 100%;
+}
+
+h2 {
+  font-size: 1.5em;
+  margin:  0;
+  text-align: left;
+  display: inline-block;
+}
+
+.Infotable__row {
+  display: grid;
+  grid-template-columns: 150px 1fr 1fr;
+  padding: 0.5em 0;
+  border-bottom: 1px solid #eee;
+  text-align: left;
+}
+
+.Infotable__row--header {
+  font-style: italic;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  text-align: left;
+}
+
+.PackageHeader {
+  margin-top: 0;
+  margin-bottom: 16px;
+  text-align: left;
+  display: flex;
+  gap: 10px;
+  align-items: baseline;
+}
+
+.PackageHeader a {
+  font-size: 0.7rem;
+}
+
+button {
+  opacity: 0.8;
+}
+
+button:hover, button:focus, button:active, button.active {
+  opacity: 1;
+}
+
+button.active {
+  background: #ccc;
+  color: black;
+}
+
+.ok {
+  background: #054;
+}
+
+.warn {
+  background: #550;
+}
+
+.danger {
+  background: #500;
+}
+
+textarea  {
+  display: block;
+  margin: 4px auto 0;
+  width: 100%;
+  min-height: 200px;
+  padding: 10px;
+}
+
+.Package, textarea {
+  box-sizing: border-box;
+}
+
+.Package {
+  padding: 40px 10px;
+}
+
+.Packages {
+  margin: 30px 0;
+  max-height: 70vh;
+  overflow: auto;
+  border: 1px solid #ccc;
+}
+
+label {
+  font-style: italic;
+}
+
+.PackageInput__error {
+  color: red;
+  font-size: 0.7rem;
+  font-style: italic;
+}
+
+.Packages__loading {
+  text-align: center;
+  font-size: 1.5rem;
+  font-style: italic;
+  margin: 20px 0;
+}
+
+.ClearAll {
+  text-align: center;
+  margin: 20px 0;
+}
+
+input {
+ border: none;
+ background: transparent;
+ border-bottom: 2px solid rgba(255,255,255,0.1);
+  width: 300px;
+ font-style: italic;
+}
+
+input:focus, input:active {
+  outline: none;
+  border-bottom: 2px solid #fff;
+}
